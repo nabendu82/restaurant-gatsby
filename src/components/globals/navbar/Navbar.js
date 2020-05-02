@@ -9,14 +9,14 @@ class Navbar extends Component {
         navbarOpen: false,
     }
     handleNavbar = () => {
-        this.setState({
-            navbarOpen: !this.state.navbarOpen
+        this.setState(() => {
+            return { navbarOpen: !this.state.navbarOpen }
         })
     }
     render() {
         return (
             <NavWrapper>
-                <NavbarHeader handleNavbar={() => this.handleNavbar} />
+                <NavbarHeader handleNavbar={this.handleNavbar} />
                 <NavbarLinks navbarOpen={this.state.navbarOpen} />
                 <NavbarIcons />
             </NavWrapper>
