@@ -7,3 +7,7 @@ export const colors = {
 }
 
 export const transDefault = 'transition:all 0.5s ease-in-out';
+
+export const transObject = ({ property = 'all', time = '0.5s', type = 'ease-in-out' }) => {
+    return `transition:${property} ${time} ${type}`
+}
