@@ -17,3 +17,7 @@ export const textSlanted = `font-family:'Caveat', cursive;`
 export const letterSpacing = ({ spacing = '0.1rem' }) => {
     return `letter-spacing:${spacing}`
 }
+
+export const border = ({ width = '0.15rem', type = 'solid', color = 'white' }) => {
+    return `border:${width} ${type} ${color}`
+}
