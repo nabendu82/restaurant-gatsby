@@ -37,7 +37,7 @@ class NavbarLinks extends Component {
                         </li>
                     )
                 })}
-                <FaCartArrowDown className="cart-icon" />
+                <FaCartArrowDown className="cart-icon snipcart-checkout" />
             </LinkWrapper>
         )
     }

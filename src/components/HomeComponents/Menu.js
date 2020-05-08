@@ -16,6 +16,7 @@ const Menu = () => {
                         ingredients
                         img {
                             fixed(width: 150, height: 150) {
+                                src
                                 ...GatsbyContentfulFixed_tracedSVG
                             }
                         }
