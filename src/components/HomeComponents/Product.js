@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles } from '../../utils'
+import { styles, SectionButton } from '../../utils'
 import Img from 'gatsby-image'
 const Product = ({ product }) => {
     const { name, price, ingredients } = product
@@ -15,6 +15,7 @@ const Product = ({ product }) => {
                     <h3 className="price">${price}</h3>
                 </div>
                 <p className="info">{ingredients}</p>
+                <SectionButton>Order</SectionButton>
             </div>
         </ProductWrapper>
     )
