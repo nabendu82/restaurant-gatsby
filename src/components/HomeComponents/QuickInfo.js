@@ -11,10 +11,8 @@ export default class QuickInfo extends Component {
                 <Title message="let us tell you" title="our misson" />
                 <QuickInfoWrapper>
                     <p className="text">
-                        Our mission is to serve you authetic dishes from north karnataka.
-                        These dishes are created by our top chefs, from the region.
-                        Some of our awesome dishes are - Menthe Kadabu, Pundi Soppu, Jolad Rotti,
-                        Ragi Ambali, Nargis Man Dak ki, Mudde, Girmit and many more.
+                    Our mission is to provide happiness and joy through food to every customer who chooses to
+                    dine at Restaurant, while not exceeding, making the size of a pin hole on their pockets.
                     </p>
                     <Link to="/about/" style={{ textDecoration: 'none' }}>
                         <SectionButton style={{ margin: '2rem auto' }}>about</SectionButton>
@@ -29,6 +27,8 @@ const QuickInfoWrapper = styled.div`
     width: 90%;
     margin: 2rem auto;
     .text {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
         line-height: 2em;
         color: ${styles.colors.mainGrey};
         word-spacing: 0.2rem;
